@@ -1,0 +1,165 @@
+.main-body
+{
+    padding: 0% 2% 5%;
+}
+.main-body-logo
+{
+    padding: 0% 6%;
+}
+.main-body-logo .row
+{
+    padding: 0% 2% !important;
+}
+.logo-header
+{
+    border-bottom: 5px solid #000000;
+    padding: 4% 2% 0%;
+    display: flex;
+}
+.logo-img{
+    border: 1px solid #000000;
+}
+.address h6
+{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.heading
+{
+    text-align: center;
+    margin-top: 2.5%;
+    margin-bottom: 3%;
+}
+.heading h6{
+    font-weight: bold;
+}
+.results-heading
+{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.results-header{
+    font-weight: bold;
+    border-bottom: #000000 1px solid;
+}
+
+table{
+    width: 100%;
+}
+.user-detail{
+    width: 50%;
+    border: 1px solid #000000;
+    font-weight: 600;
+}
+.main-table
+{
+    padding: 0% 0% !important;
+}
+h5{
+    font-weight: bold;
+}
+.court-table h5
+{
+    margin-bottom: 3%;
+}
+.court-details-head{
+    border: 1px solid #000000;
+    font-weight: 600;
+    text-align: center;
+    width: 33%;
+}
+.court-details
+{
+    text-align: center;
+    border: 1px solid #000000;
+}
+.session-court
+{
+    margin-top: 5%;
+}
+.session-court h5
+{
+    margin-bottom: 3%;
+}
+.conclusion h5
+{
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.conclude
+{
+    font-weight: 900;
+    font-size: 18px;
+}
+.digi-sign
+{
+    display: flex;
+    margin-top: 3%;
+}
+.digi-sign h6
+{
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+.sign-img
+{
+    width: 162%;
+    height: 72%;
+    border: 1px solid #000000;
+    text-align: center;
+}
+.img-sign
+{
+    border: none !important;
+    height: 95px;
+}
+.signature
+{
+    padding: 0px;
+}
+.digiSign-detail
+{
+    margin-top: 14%;
+}
+.disclaimer h5
+{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-weight: bold;
+    font-size: 18px;
+}
+.disclaimer-details h6
+{
+    font-weight: bold;
+    font-size: 17px;
+}
+.liability .records
+{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.private h6
+{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 2%;
+}
+.private h5
+{
+    text-align: center;
+    font-weight: 600;
+    font-size: 25x;
+    margin-top: 2%;
+}
+.private
+{
+    margin-bottom: 2%;
+}
+.confi
+{
+    border-bottom: #000000 7px solid;
+    margin-top: 3%;
+}

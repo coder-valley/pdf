@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@media all {
+	.page-break	{page-break-after: always; }
+}
+
+@media print {
+	.page-break	{ visibility:hidden; display: block; page-break-after: always; }
+}

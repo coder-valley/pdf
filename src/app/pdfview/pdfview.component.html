@@ -1,0 +1,203 @@
+<!-- <div class="container" style="text-align:center;">
+  <button class="btn btn-success" (click)='generatePDF()'> Download PDF</button>
+</div> -->
+
+<div class="container-fluid main-body" id="details">
+  <div class="row">
+    <div class="container-fluid main-body-logo">
+      <div class="row">
+
+        <div class="container logo-header">
+          <div class="col-md-1 col-lg-1"></div>
+          
+          <div class="col-md-4 col-lg-4">
+            <img class="img-fluid logo-img" src="../../assets/verify3.png" alt="logo">
+          </div>
+          
+          <div class="col-md-6 col-lg-6 address">
+            <h6>Valuepitch E-Technologies Pvt. Ltd.</h6>
+            <p>
+              Row House, Plot No. 75, Ground Floor, Sector-16 Opp.<br> Beverly Park Lane, KoparKhairne, Navi Mumbai, Pin: 400709
+              <br>Tel: +91 22 32605126
+              <br>Bar council Number: AP/1898/2009
+            </p>
+          </div>
+          <div class="col-md-1 col-lg-1"></div>
+        </div>
+        <div class="col-md-12 col-lg-12 heading">
+          <h6>
+            TO WHOMSOEVER IT MAY CONCERN
+          </h6>
+        </div>
+        
+        <!-- User Info Details STARTS HERE -->
+        <div class="container main-table">
+          <table>
+            <tr>
+              <td class="user-detail">Applicant's Name:</td>
+              <td class="user-detail">{{details.name }}</td>
+            </tr>
+            <tr>
+              <td class="user-detail">Father's Name:</td>
+              <td class="user-detail">{{fatherDetail.name}}</td>
+            </tr>
+            <tr>
+              <td class="user-detail">Date of Birth:</td>
+              <td class="user-detail">{{dob.dateOfBirth}}</td>
+            </tr>
+            <tr>
+              <td class="user-detail">Year of Search:</td>
+              <td class="user-detail">{{year.search}}</td>
+            </tr>
+            <tr>
+              <td class="user-detail">Addresss:</td>
+              <td class="user-detail">{{addresses.address}}</td>
+            </tr>
+            <tr>
+              <td class="user-detail">Stay:</td>
+              <td class="user-detail">{{stay.duration}}</td>
+            </tr>
+            
+          </table>
+        </div>
+        <!-- User Info Details ENDS HERE -->
+
+        <!-- Results DIV STARTED HERE -->
+        <div class="col-md-12 col-lg-12 results-heading">
+          <h5>
+            <span class="results-header">RESULTS </span>
+          </h5>
+        </div>
+
+        <div class="container court-table">
+          <h5>1. Civil Proceedings: Original Suit / Miscellaneous Suit / Execution Petition</h5>
+          <table>
+            <tr>
+              <td class="court-details-head">Court</td>
+              <td class="court-details-head">Court Name</td>
+              <td class="court-details-head">Results</td>
+            </tr>
+            <tr>
+              <td class="court-details">District Court/ Lower Court/ Civil<br>Court & Small Causes</td>
+              <td class="court-details">All India Courts</td>
+              <td class="court-details">No Record</td>
+            </tr>
+
+          </table>
+        </div>
+
+        <div class="container session-court">
+          <h5>
+            2. Criminal Proceedings: Criminal Petitions / Criminal Appeal / Sessions Case / Criminal
+            Miscellaneous Petition / Criminal Revision Appeal
+          </h5>
+          <table>
+            <tr>
+              <td class="court-details-head">Court</td>
+              <td class="court-details-head">Court Name</td>
+              <td class="court-details-head">Results</td>
+            </tr>
+            <tr>
+              <td class="court-details">Sessions Court</td>
+              <td class="court-details">All Sessions Court</td>
+              <td class="court-details">No Record</td>
+            </tr>
+
+          </table>
+        </div>
+        <!-- Results DIV ENDS HERE -->
+
+        <!-- Conclusions Start Here -->
+        <div class="container conclusion">
+          <h5>Conclusion:</h5>
+          <p class="conclude">
+            In Conclusion, as on date of this search, there appears to be no Civil or Criminal case instituted against the
+            <br>Subject, at the given address.
+          </p>
+        </div>
+        <!-- Conclusions END Here -->
+
+        <!-- Digital Signature STARTS Here -->
+        <div class="container digi-sign">
+          <div class="col-md-2 col-lg-2 signature">
+            <h6>Yours Truly</h6>
+            <div class="sign-img">
+              <img class="img-sign img-fluid" src="../../assets/priyanka_new.png">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+
+          </div>
+          <div class="col-md-4 col-lg-4">
+            <p class="digiSign-detail">
+              Digitally Signed by Advocate Priyanka,
+              Dated 30-08-2018, For ,
+              Verify digital signature
+              5b87a95d95911a6c10c575b3
+            </p>
+          </div>
+        </div>
+        <!-- Digital Signature ENDS Here -->
+
+        <!-- Disclaimers STARTS HERE -->
+        <div class="container disclaimer">
+          <h5>*Disclaimers and limitations of liability</h5>
+          <div class="disclaimer-details">
+            <h6>
+              1 .Valuepitch/Verify24x7 provides data on an as available basis and on good faith.
+            </h6>
+
+            <h6>
+              2. We are responsible for providing the best possible match for the input data given the records at our disposal at any given time.
+            </h6>
+
+            <h6>
+              3. The data might have been changed, deleted, modified from thereon. We limit our liability to the extent of the information provided by court
+              systems to the general public by internet.
+            </h6>
+
+            <h6>
+              4. Our reports do not and will not assert that the individual being searched for is the person found in the records.
+            </h6> 
+
+            <h6>
+              5. Given the nature of the fragmented, incomplete data in India?s online court records and legal records, Verify24x7 will only indicate a
+              probability of a match.
+            </h6>
+            
+            <h6>
+              6. Valuepitch will make every effort to fetch records as they become public in any online court record system in India.
+            </h6> 
+
+            <h6>
+              7. The Given report has been updated as on
+            </h6>
+
+            <h6 >
+              8. Valuepitch will not be liable for the following:<br>
+              <p class="liability"><span class="records">&nbsp;&nbsp;&nbsp;&nbsp;a.Records that are not present in our database at any given point in time.</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;b.Inaccurate labeling of any individual case.<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;c.Insufficiency of input data leading to inaccurate results.</p>
+            </h6>
+          </div>
+        </div>
+        <!-- Disclaimers ENDS HERE -->
+
+        <div class="container-fluid">
+          <div class="private">
+            <h6 >Private and Confidential</h6>
+            <h1 class="confi"></h1>
+            <h5>This is a digitally signed certificate</h5>
+            <h5>Regd. Address: Plot no 75, sector 16, opp. beverly park, koparkhairane, 400709</h5>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>

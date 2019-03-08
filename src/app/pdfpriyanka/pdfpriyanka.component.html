@@ -1,0 +1,314 @@
+<div class="container" style="text-align:center;">
+  <button class="btn btn-success" (click)='generatePDF()'> Download PDF</button>
+</div>
+
+<div class="container-fluid main-body" id="details">
+  <div class="row">
+    <div class="container-fluid main-body-logo">
+      <div class="row">
+
+        <div class="container logo-header">
+          <div class="col-md-3 col-lg-3"></div>
+          
+          <div class="col-md-8 col-lg-8 address">
+            <h6>
+              Priyanka<br>
+            </h6>
+            <p>     
+              <b>Bar council Number: AP/1898/2009</b>  <br>         
+              Chamber No 422 A, New Lawyers Chamber, Supreme Court of India,
+              Bhagwan Das Road, New Delhi-110017.
+            </p>
+          </div>
+          <div class="col-md-1 col-lg-1"></div>
+        </div>
+        <div class="col-md-12 col-lg-12 heading">
+          <h6>
+            <span>TO WHOMSOEVER IT MAY CONCERN</span>
+          </h6>
+        </div>
+        
+        <!-- User Info Details STARTS HERE -->
+        <div class="container main-table">
+          <div class="col-md-2 col-lg-2"></div>
+          
+          <div class="col-md-10 col-lg-10">
+            <h5 class="info">This information is given with regards to search conducted for:&nbsp;</h5>
+            <div class="detailss">
+              <div class="col-md-6 col-lg-6 detailss-head">
+                Name of the Subject
+              </div>
+              <div class="col-md-6 col-lg-6">
+                :&nbsp;{{details.name }}
+              </div>
+            </div>
+
+            <div class="detailss">
+              <div class="col-md-6 col-lg-6 detailss-head">
+                Order Reference Number
+              </div>
+              <div class="col-md-6 col-lg-6">
+                :&nbsp;{{fatherDetail.name}}
+              </div>
+            </div>
+
+            <div class="detailss">
+              <div class="col-md-6 col-lg-6 detailss-head">
+                Date of Birth
+              </div>
+              <div class="col-md-6 col-lg-6">
+                :&nbsp;{{dob.dateOfBirth}}
+              </div>
+            </div>
+
+            <div class="detailss">
+              <div class="col-md-6 col-lg-6 detailss-head">
+                Father's Name
+              </div>
+              <div class="col-md-6 col-lg-6">
+                :&nbsp;{{fatherName.fname}}
+              </div>
+            </div>
+            
+            <div class="detailss">
+              <div class="col-md-6 col-lg-6 detailss-head">
+                Addresss1
+              </div>
+              <div class="col-md-6 col-lg-6">
+                :&nbsp;{{addresses.address}}
+              </div>
+            </div>
+            
+            <div class="detailss">
+              <div class="col-md-6 col-lg-6 detailss-head">
+                Period of Stay
+              </div>
+              <div class="col-md-6 col-lg-6">
+                :&nbsp;{{duration.stay}}
+              </div>
+            </div>
+
+            <div class="detailss">
+              <div class="col-md-6 col-lg-6 detailss-head">
+                Date of Verification
+              </div>
+              <div class="col-md-6 col-lg-6 detailss-head">
+                :&nbsp;{{year.search}}
+              </div>
+            </div>
+
+            <div class="detailss">
+              <div class="col-md-6 col-lg-6 detailss-head">
+                Report end time
+              </div>
+              <div class="col-md-6 col-lg-6">
+                :&nbsp;{{year.search}}
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-md- col-lg-1"></div> -->
+        </div>
+        <!-- User Info Details ENDS HERE -->
+
+        <!-- Results DIV STARTED HERE -->
+        <div class="col-md-12 col-lg-12 results-heading">
+          <h5>
+            <span class="results-header">RESULTS </span>
+          </h5>
+        </div>
+
+        <div class="container court-table">
+          <h5>1. Civil Proceedings:&nbsp; Original Suit / Miscellaneous Suit / Execution Petition</h5>
+          <table class="table-bordered">
+            <tr>
+              <td class="court-details-head">Court</td>
+              <td class="court-details-head">Court Name</td>
+              <td class="court-details-head">Results</td>
+              <td class="court-details-head">Period</td>
+            </tr>
+            <tr>
+              <td class="court-details">District Court/ Lower Court/ Civil<br>Court & Small Causes</td>
+              <td class="court-details">All India Courts</td>
+              <td class="court-details">No Record</td>
+              <td class="court-details">7 Years</td>
+            </tr>
+            <tr>
+              <td class="court-details">High Court</td>
+              <td class="court-details">All High Courts of India</td>
+              <td class="court-details">No Record</td>
+              <td class="court-details">7 Years</td>
+            </tr>
+            <tr>
+              <td class="court-details">Supreme Court</td>
+              <td class="court-details">Supreme Court of India</td>
+              <td class="court-details">No Record</td>
+              <td class="court-details">7 Years</td>
+            </tr>
+
+          </table>
+        </div>
+
+        <!-- <div class="container">
+          <h5 class="">kjbkjbdsbkbkjbd</h5>
+          <table></table>
+        </div> -->
+        
+
+        <div class="container session-court ">
+          <h4>
+            2. Criminal Proceedings:&nbsp; <span>Criminal Petitions / Criminal Appeal / Sessions Case /<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criminal
+            Miscellaneous Petition / Criminal Revision Appeal</span>
+          </h4>
+          <table class="table-bordered">
+            <tr>
+              <td class="court-details-head">Court</td>
+              <td class="court-details-head">Court Name</td>
+              <td class="court-details-head">Results</td>
+              <td class="court-details-head">Period</td>
+            </tr>
+            <tr>
+              <td class="court-details">Magistrate Court</td>
+              <td class="court-details">All Magistrate Courts</td>
+              <td class="court-details">No Record</td>
+              <td class="court-details">7 Years</td>
+            </tr>
+            <tr>
+              <td class="court-details">Sessions Court</td>
+              <td class="court-details">All Sessions Courts</td>
+              <td class="court-details">No Record</td>
+              <td class="court-details">7 Years</td>
+            </tr>
+            <tr>
+              <td class="court-details">High Court</td>
+              <td class="court-details">All High Courts of India</td>
+              <td class="court-details">No Record</td>
+              <td class="court-details">7 Years</td>
+            </tr>
+            <tr>
+              <td class="court-details">Supreme Court</td>
+              <td class="court-details">Supreme Court of India</td>
+              <td class="court-details">No Record</td>
+              <td class="court-details">7 Years</td>
+            </tr>
+          
+          </table>
+        </div>
+        <!-- Results DIV ENDS HERE -->
+        
+        
+
+        <!-- Conclusions Start Here -->
+        <div class="container conclusion">
+          <h5>Conclusion:&nbsp;</h5>
+          <p class="conclude">
+            In Conclusion, as on date of this search, there appears to be no Civil or Criminal case instituted against the
+            <br>Subject, at the given address.
+          </p>
+        </div>
+        <!-- Conclusions END Here -->
+
+        <!-- Digital Signature STARTS Here -->
+        <div class="container digi-sign" >
+          <div class="col-md-2 col-lg-2 signature">
+            <h6>Yours Truly</h6>
+            <div class="sign-img">
+              <img class="img-sign img-fluid" src="../../assets/priy.png">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+
+          </div>
+          <div class="col-md-4 col-lg-4">
+            <p class="digiSign-detail">
+              Digitally Signed by Advocate Priyanka,
+              Dated 30-08-2018, For ,
+              Verify digital signature
+              5b87a95d95911a6c10c575b3
+              
+            </p>
+          </div>
+        </div>
+        <!-- Digital Signature ENDS Here -->
+        
+
+        <!-- IFRAME STARTS HERE -->
+
+        <div class="card card-block page-break"> 
+          <h5 class="page-break"></h5>
+          <table></table>
+        </div> 
+
+
+        <div class="container">
+          <iframe id="ifame" type="application/pdf" [src]= 'photoURL()' name="ifame" width="100%" frameborder="0" 
+          webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"
+          onload="this.style.height=this.contentDocument.body.scrollHeight +'px';">
+          </iframe>
+        </div>
+        
+
+        <!-- IFRAME ENDS HERE -->
+
+
+
+        <!-- Disclaimers STARTS HERE -->
+        <div class="container disclaimer">
+          <h5>*Disclaimers and limitations of liability</h5>
+          <div class="disclaimer-details">
+            <h6>
+              1 .Valuepitch/Verify24x7 provides data on an as available basis and on good faith.
+            </h6>
+
+            <h6>
+              2. We are responsible for providing the best possible match for the input data given the records at our disposal at any given time.
+            </h6>
+
+            <h6>
+              3. The data might have been changed, deleted, modified from thereon. We limit our liability to the extent of the information provided by court
+              systems to the general public by internet.
+            </h6>
+
+            <h6>
+              4. Our reports do not and will not assert that the individual being searched for is the person found in the records.
+            </h6> 
+
+            <h6>
+              5. Given the nature of the fragmented, incomplete data in India's online court records and legal records, Verify24x7 will only indicate a
+              probability of a match.
+            </h6>
+            
+            <h6>
+              6. Valuepitch will make every effort to fetch records as they become public in any online court record system in India.
+            </h6> 
+
+            <h6>
+              7. The Given report has been updated as on
+            </h6>
+
+            <h6 >
+              8. Valuepitch will not be liable for the following:&nbsp;<br>
+              <p class="liability"><span class="records">&nbsp;&nbsp;&nbsp;&nbsp;a.Records that are not present in our database at any given point in time.</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;b.Inaccurate labeling of any individual case.<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;c.Insufficiency of input data leading to inaccurate results.</p>
+            </h6>
+          </div>
+        </div>
+        <!-- Disclaimers ENDS HERE -->
+
+        <div class="container-fluid">
+          <div class="private">
+            <h6 >Private and Confidential</h6>
+            <h1 class="confi"></h1>
+            <h5>This is a digitally signed certificate</h5>
+            <h5>Regd. Address:&nbsp; Plot no 75, sector 16, opp. beverly park, koparkhairane, 400709</h5>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

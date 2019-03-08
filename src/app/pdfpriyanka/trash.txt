@@ -1,0 +1,53 @@
+  // public generatePDF(){
+  
+  //   var HTML_Width = $("#details").width();
+  //   var HTML_Height = $("#details").height();
+  //   var top_left_margin = 10;
+  //   var PDF_Width = HTML_Width+(top_left_margin*2);
+  //   var PDF_Height = (PDF_Width*1)+(top_left_margin*2);
+  //   var canvas_image_width = HTML_Width;
+  //   var canvas_image_height = HTML_Height;
+    
+  //   var totalPDFPages = Math.ceil(HTML_Height/PDF_Height)-1;
+    
+    
+  //   html2canvas($("#details")[0],{allowTaint:true}).then( (canvas) => {
+  //   canvas.getContext('2d');
+    
+  //   console.log(canvas.height+"  "+canvas.width);
+    
+    
+  //   var imgData = canvas.toDataURL("image/jpeg", 1.0);
+  //   var pdf = new jspdf('p', 'pt',  [PDF_Width, PDF_Height]);
+  //   console.log(pdf)
+  //   pdf.addImage(imgData, 'JPG', top_left_margin, top_left_margin,canvas_image_width,canvas_image_height);
+    
+    
+
+  //   for (var i = 1; i <= totalPDFPages; i++) { 
+  //   pdf.addPage(PDF_Width, PDF_Height);
+  //   pdf.addImage(imgData, 'JPG', top_left_margin, -(PDF_Height*i)+(top_left_margin*4),canvas_image_width,canvas_image_height);
+  //   }
+    
+  //     pdf.save("MyDoC.pdf");
+  //   });
+  // };
+
+
+  // public getFrameContents() {
+  //   var iFrame = document.getElementById('ifame');
+  //   var iFrameBody;
+  //   if (iFrame.contentDocument) { // FF
+  //       iFrameBody = iFrame.contentDocument.getElementsByTagName('body')[0];
+  //   } else if (iFrame.contentWindow) { // IE
+  //       iFrameBody = iFrame.contentWindow.document.getElementsByTagName('body')[0];
+  //   }
+  //   //alert(iFrameBody.innerHTML);
+  //   return iFrameBody.innerHTML
+  // }
+  
+  // public generatePDF() {
+  //   console.log(this.getFrameContents())
+  // }
+
+
